@@ -32,19 +32,48 @@ void main()
 {
 
     float num1, num2;
+    int op;
 
-    printf("igite o primeiro numero:");
-    scanf("%f", &num1);
+    do
+    {
+        printf("\nDigite o primeiro numero:");
+        scanf("%f", &num1);
 
-    printf("Digite o segundo numero:");
-    scanf("%f", &num2);
+        printf("\nDigite o segundo numero:");
+        scanf("%f", &num2);
 
-    //chamando as funções da calculadora:
-    soma(num1, num2);
+        printf("\n0 - para sair\n1 - para multiplicar\n2 - para somar\n3 - para subtrair\n 4 - para dividir");
 
-    multiplicacao(num1, num2);
+        printf("\nDigite a opcao:\t");
+        scanf("%d", &op);
 
-    divisao(num1, num2);
+        switch (op)
+        {
 
-    subtracao(num1, num2);
+        case 0:
+            printf("*********Voce Saiu do Programa*********");
+            break;
+
+        case 1:
+            multiplicacao(num1, num2);
+            break;
+
+        case 2:
+            soma(num1, num2);
+            break;
+
+        case 3:
+            subtracao(num1, num2);
+            break;
+        case 4:
+            divisao(num1, num2);
+            break;
+
+        default:
+            printf("\n******Digite uma Opcao Valida******");
+            break;
+        }
+        // chamando as funções da calculadora:
+
+    } while (op!=0);
 }
