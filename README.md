@@ -1,2 +1,2 @@
-# projeto1-html-basico-git-e-github-
-aula1 - html - iniciante utilizando o git e github como suporte
+# projeto1-basico-git-e-github-
+aula1 - tilizando o git e github como suporte
